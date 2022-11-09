@@ -1,4 +1,4 @@
-package com.swancodes.worldmap.model
+package com.swancodes.countriesoftheworld.model
 
 data class CountryBaseResponseItem(
     val altSpellings: List<String>,
@@ -9,8 +9,8 @@ data class CountryBaseResponseItem(
     val car: Car,
     val coatOfArms: CoatOfArms,
     val continents: List<String>,
-    val currencies: Currencies,
-    val demonyms: Demonyms,
+    //val currencies: Currencies,
+    //val demonyms: Demonyms,
     val fifa: String,
     val flag: String,
     val flags: Flags,

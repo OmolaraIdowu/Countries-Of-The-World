@@ -1,4 +1,4 @@
-package com.swancodes.worldmap.model
+package com.swancodes.countriesoftheworld.model
 
 data class Maps(
     val googleMaps: String,

@@ -1,4 +1,4 @@
-package com.swancodes.worldmap.model
+package com.swancodes.countriesoftheworld.model
 
 data class Flags(
     val png: String,

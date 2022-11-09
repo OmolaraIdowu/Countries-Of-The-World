@@ -1,4 +1,4 @@
-package com.swancodes.worldmap
+package com.swancodes.countriesoftheworld
 
 import org.junit.Test
 

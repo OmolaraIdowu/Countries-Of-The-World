@@ -1,3 +1,3 @@
-package com.swancodes.worldmap.model
+package com.swancodes.countriesoftheworld.model
 
 class CountryBaseResponse : ArrayList<CountryBaseResponseItem>()

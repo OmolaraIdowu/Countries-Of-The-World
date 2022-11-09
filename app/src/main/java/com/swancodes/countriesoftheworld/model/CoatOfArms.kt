@@ -1,4 +1,4 @@
-package com.swancodes.worldmap.model
+package com.swancodes.countriesoftheworld.model
 
 data class CoatOfArms(
     val png: String,
