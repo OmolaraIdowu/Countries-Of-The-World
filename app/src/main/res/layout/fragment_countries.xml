@@ -6,15 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".fragments.CountriesFragment">
 
-    <ImageView
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/elsie_swash_caps_black"
+        android:text="@string/explore"
+        android:textColor="?colorOnPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/startGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/full_stop"
+        android:textColor="#FF6C00"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginTop="20dp"
         android:background="@color/gray_200"
         android:contentDescription="@string/app_name"
         android:src="@drawable/ic_light"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
         app:layout_constraintEnd_toEndOf="@id/endGuideline"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,15 +48,15 @@
         android:id="@+id/countrySearchView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background_text_field"
+        android:fontFamily="@font/axiforma_regular"
         android:iconifiedByDefault="false"
         android:queryBackground="@android:color/transparent"
         android:queryHint="@string/search_country"
-        android:fontFamily="@font/axiforma_regular"
-        android:background="@drawable/background_text_field"
         app:layout_constraintEnd_toEndOf="@id/endGuideline"
         app:layout_constraintStart_toStartOf="@id/startGuideline"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/title" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/languageButton"
@@ -38,8 +64,8 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/white"
-        android:fontFamily="@font/axiforma_regular"
         android:drawableLeft="@drawable/ic_geography"
+        android:fontFamily="@font/axiforma_regular"
         android:text="@string/en"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -56,8 +82,8 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/white"
-        android:fontFamily="@font/axiforma_regular"
         android:drawableLeft="@drawable/ic_filter"
+        android:fontFamily="@font/axiforma_regular"
         android:text="@string/filter"
         android:textAllCaps="false"
         android:textColor="@color/black"
@@ -99,13 +125,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:clipToPadding="false"
-        tools:listitem="@layout/country_list_items"
         android:scrollbarStyle="insideInset"
         android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/viewBottom" />
-
+        app:layout_constraintTop_toBottomOf="@id/viewBottom"
+        tools:listitem="@layout/country_list_items" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

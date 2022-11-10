@@ -7,4 +7,20 @@
     <string name="en">EN</string>
     <string name="filter">Filter</string>
     <string name="andorra">Andorra</string>
+    <string name="full_stop">.</string>
+    <string name="language">Language</string>
+    <string name="lang1">Bahasa</string>
+    <string name="lang2">Deutsch</string>
+    <string name="lang3">English</string>
+    <string name="lang4">Español</string>
+    <string name="lang5">Française</string>
+    <string name="lang6">Italiano</string>
+    <string name="lang7">Português</string>
+    <string name="lang8">Pу́сский</string>
+    <string name="lang9">Svenska</string>
+    <string name="lang10">Türkçe</string>
+    <string name="lang11">普通话</string>
+    <string name="lang12">بالعربية</string>
+    <string name="lang13">বাঙ্গালী</string>
+    <string name="clearbutton">clearButton</string>
 </resources>
