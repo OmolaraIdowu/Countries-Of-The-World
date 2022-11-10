@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import com.swancodes.countriesoftheworld.R
 import com.swancodes.countriesoftheworld.databinding.FragmentDetailsBinding
 

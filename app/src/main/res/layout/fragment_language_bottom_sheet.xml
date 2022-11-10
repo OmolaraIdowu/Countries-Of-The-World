@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    tools:context=".fragments.LanguageBottomSheetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:fontFamily="@font/axiforma_bold"
+            android:text="@string/language"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/background_text_field"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_close"
+            app:layout_constraintBottom_toBottomOf="@id/materialTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/materialTextView"
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_bahasa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang1"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_deutsch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang2"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:checked="true"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang3"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_espanol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang4"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_francaise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang5"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_italiano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang6"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_portugues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang7"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_pycckuu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang8"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_svenska"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang9"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_turkce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang10"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_pǔtōnghuà"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang11"
+                android:textSize="16sp"
+                android:textStyle="normal"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang12"
+                android:textDirection="ltr"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/option_bengali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/axiforma_regular"
+                android:text="@string/lang13"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

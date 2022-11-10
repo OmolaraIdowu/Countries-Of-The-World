@@ -17,8 +17,11 @@
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/layout/country_list_items.xml" value="0.240625" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/layout/fragment_bottom.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/layout/fragment_bottom2.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/layout/fragment_countries.xml" value="0.33" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/layout/fragment_details.xml" value="0.22" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/layout/fragment_filter_bottom_sheet.xml" value="0.1331521739130435" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/layout/fragment_language_bottom_sheet.xml" value="0.22291666666666668" />
       </map>
     </option>
   </component>

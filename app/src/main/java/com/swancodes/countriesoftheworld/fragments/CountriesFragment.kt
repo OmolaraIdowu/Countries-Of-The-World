@@ -5,23 +5,25 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.swancodes.countriesoftheworld.adapters.CountriesAdapter
 import com.swancodes.countriesoftheworld.data.network.CountriesApiClient
 import com.swancodes.countriesoftheworld.databinding.FragmentCountriesBinding
-import com.swancodes.countriesoftheworld.model.CountryBaseResponse
+import com.swancodes.countriesoftheworld.model.CountryBaseResponseItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class CountriesFragment : BottomSheetDialogFragment() {
+class CountriesFragment : Fragment() {
 
     private lateinit var binding: FragmentCountriesBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentCountriesBinding.inflate(inflater)
         return binding.root
@@ -31,23 +33,43 @@ class CountriesFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.languageButton.setOnClickListener {
-            val bottomSheet = BottomFragment()
+            val bottomSheet = LanguageBottomSheetFragment()
             val fragmentManager = (activity as FragmentActivity).supportFragmentManager
-            fragmentManager.let { bottomSheet.show(it, BottomFragment.TAG) }
-
-            CountriesApiClient.retrofitService.getCountriesData()
-                .enqueue(object : Callback<CountryBaseResponse> {
-                    override fun onResponse(
-                        call: Call<CountryBaseResponse>,
-                        response: Response<CountryBaseResponse>
-                    ) {
-
-                    }
-
-                    override fun onFailure(call: Call<CountryBaseResponse>, t: Throwable) {
-                        Log.d("MainActivity", "onFailure: " + t.message)
-                    }
-                })
+            fragmentManager.let { bottomSheet.show(it, LanguageBottomSheetFragment.TAG) }
         }
+        binding.filterButton.setOnClickListener {
+            val bottom = FilterBottomSheetFragment()
+            val fragment = (activity as FragmentActivity).supportFragmentManager
+            fragment.let {
+                bottom.show(it, FilterBottomSheetFragment.TAG)
+            }
+        }
+
+        CountriesApiClient.retrofitService.getCountriesData()
+            .enqueue(object : Callback<List<CountryBaseResponseItem>> {
+                override fun onResponse(
+                    call: Call<List<CountryBaseResponseItem>>,
+                    response: Response<List<CountryBaseResponseItem>>
+                ) {
+                    // Checking for the response
+                    val dataModel = response.body()
+                    setUpRecyclerViewAdapter(dataModel)
+                    Toast.makeText(requireContext(), "Success", Toast.LENGTH_SHORT).show()
+                }
+
+                override fun onFailure(
+                    call: Call<List<CountryBaseResponseItem>>,
+                    t: Throwable
+                ) {
+                    Log.d("MainActivityX", "onFailure: " + t.message)
+                    Toast.makeText(requireContext(), "Failure", Toast.LENGTH_SHORT).show()
+                }
+            })
+    }
+    fun setUpRecyclerViewAdapter(items: List<CountryBaseResponseItem>?) {
+        val countriesAdapter: CountriesAdapter = CountriesAdapter()
+        binding.recyclerView.adapter = countriesAdapter
+        countriesAdapter.setCountryList(items)
+
     }
 }
