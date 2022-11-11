@@ -1,14 +1,12 @@
 package com.swancodes.countriesoftheworld.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import androidx.navigation.fragment.findNavController
 import com.swancodes.countriesoftheworld.adapters.CountriesAdapter
 import com.swancodes.countriesoftheworld.data.network.CountriesApiClient
 import com.swancodes.countriesoftheworld.databinding.FragmentCountriesBinding
