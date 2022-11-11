@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
+            android:textColor="?colorSecondary"
             android:fontFamily="@font/axiforma_bold"
             android:text="@string/language"
             android:textSize="20sp"
@@ -41,17 +42,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layoutDirection="rtl"
+            android:backgroundTint="?android:colorBackground"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+            app:layout_constraintTop_toBottomOf="@id/materialTextView">
 
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/option_bahasa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
+                android:textColor="?colorSecondary"
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang1"
                 android:textSize="16sp"
@@ -63,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
                 android:layout_marginTop="24dp"
+                android:textColor="?colorSecondary"
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang2"
                 android:textSize="16sp"
@@ -75,6 +79,8 @@
                 android:layout_marginHorizontal="24dp"
                 android:layout_marginTop="24dp"
                 android:checked="true"
+                android:backgroundTint="?colorSecondary"
+                android:textColor="?colorSecondary"
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang3"
                 android:textSize="16sp"
@@ -89,6 +95,7 @@
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang4"
                 android:textSize="16sp"
+                android:textColor="?colorSecondary"
                 android:textStyle="normal" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
@@ -100,6 +107,7 @@
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang5"
                 android:textSize="16sp"
+                android:textColor="?colorSecondary"
                 android:textStyle="normal" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
@@ -111,6 +119,7 @@
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang6"
                 android:textSize="16sp"
+                android:textColor="?colorSecondary"
                 android:textStyle="normal" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
@@ -122,6 +131,7 @@
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang7"
                 android:textSize="16sp"
+                android:textColor="?colorSecondary"
                 android:textStyle="normal" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
@@ -133,6 +143,7 @@
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang8"
                 android:textSize="16sp"
+                android:textColor="?colorSecondary"
                 android:textStyle="normal" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
@@ -144,6 +155,7 @@
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang9"
                 android:textSize="16sp"
+                android:textColor="?colorSecondary"
                 android:textStyle="normal" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
@@ -154,6 +166,7 @@
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang10"
+                android:textColor="?colorSecondary"
                 android:textSize="16sp"
                 android:textStyle="normal" />
 
@@ -166,6 +179,7 @@
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang11"
                 android:textSize="16sp"
+                android:textColor="?colorSecondary"
                 android:textStyle="normal"/>
 
             <com.google.android.material.radiobutton.MaterialRadioButton
@@ -177,6 +191,7 @@
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang12"
                 android:textDirection="ltr"
+                android:textColor="?colorSecondary"
                 android:textSize="16sp"
                 android:textStyle="normal" />
 
@@ -188,6 +203,7 @@
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/axiforma_regular"
                 android:text="@string/lang13"
+                android:textColor="?colorSecondary"
                 android:textSize="16sp"
                 android:textStyle="normal" />
 

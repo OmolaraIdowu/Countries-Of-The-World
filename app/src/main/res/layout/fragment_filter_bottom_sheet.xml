@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/bottomSheet2"
     android:background="@drawable/bottom_sheet_background"
-    tools:context=".fragments.BottomFragment2">
+    tools:context=".fragments.FilterBottomSheetFragment">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView"
@@ -32,9 +32,6 @@
         app:layout_constraintTop_toTopOf="@id/materialTextView"
         tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

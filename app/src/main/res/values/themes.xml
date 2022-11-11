@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.CountriesOfTheWorld" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">#F2F4F7</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/blue_700</item>
         <!-- Secondary brand color. -->
@@ -12,7 +12,7 @@
         <item name="android:colorBackground">@color/white</item>
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?android:colorBackground</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="BottomSheetDailogTheme" parent="Theme.Design.Light.BottomSheetDialog">

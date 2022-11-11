@@ -10,6 +10,7 @@ import com.swancodes.countriesoftheworld.utils.loadImage
 
 class CountriesAdapter : RecyclerView.Adapter<CountriesAdapter.CountriesViewHolder>() {
     private var items : List<CountryBaseResponseItem>? = null
+    //private val onItemClicked: CountryBaseResponseItem
 
     fun setCountryList(countryList: List<CountryBaseResponseItem>?) {
         items = countryList
@@ -26,6 +27,7 @@ class CountriesAdapter : RecyclerView.Adapter<CountriesAdapter.CountriesViewHold
                 }
             }
             binding.flagImage.loadImage(countryItem?.flags?.png)
+
         }
     }
 
@@ -37,6 +39,10 @@ class CountriesAdapter : RecyclerView.Adapter<CountriesAdapter.CountriesViewHold
 
     override fun onBindViewHolder(holder: CountriesViewHolder, position: Int) {
        holder.bind(items?.get(position))
+
+       /* holder.bind(items?).setOnClickListener {
+            onItemClicked
+        }*/
     }
 
     override fun getItemCount() = items?.size ?: 0
