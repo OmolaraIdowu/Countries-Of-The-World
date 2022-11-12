@@ -25,13 +25,15 @@ You can download the APK file for this project [here]( )
 
 • Data Binding with binding adapters.
 
- • Glide - an Image Loader Library.
+• Glide - an Image Loader Library.
  
- • Retrofit 
+• Retrofit 
  
- • GSON to parse API response.
+• GSON to parse API response.
  
- • OkHttp for HTTP requests
+• OkHttp for HTTP requests
+
+• Navigation
 
 ## Installation
 
