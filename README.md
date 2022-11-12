@@ -1,5 +1,7 @@
 # Countries-Of-The-World
-List of Countries and their details
+List of Countries and Details
+
+HNG Mobile Task 3
 
 ## Description
 A simple app listing all the countries of the world along with flags, capitals, cities, and information.
@@ -11,7 +13,7 @@ A simple app listing all the countries of the world along with flags, capitals, 
 
 ## APK file
 
-You can download the APK file for this project [here](https://jajhsnjssn)
+You can download the APK file for this project [here]( )
 
 ## Libraries
 
@@ -34,3 +36,17 @@ You can download the APK file for this project [here](https://jajhsnjssn)
 ## Installation
 
 • To run this code, clone the repository and import into android studio
+
+
+
+## Demo
+
+• Download project [here]()
+
+## To-do
+
+• Language settings
+
+• Architecture Components - ViewModel and LiveData
+
+• Filter settings
