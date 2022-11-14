@@ -13,7 +13,7 @@ A simple app listing all the countries of the world along with flags, capitals, 
 
 ## APK file
 
-You can download the APK file for this project [here]( )
+You can download the APK file for this project [here]()
 
 ## Libraries
 
@@ -43,7 +43,7 @@ You can download the APK file for this project [here]( )
 
 ## Demo
 
-• Download project [here]()
+• Download project [here](https://appetize.io/app/4bhqpe6nlgw6uhj2uc7c6xzrim?device=pixel4xl&osVersion=11.0&scale=75)
 
 ## To-do
 
