@@ -13,7 +13,7 @@ A simple app listing all the countries of the world along with flags, capitals, 
 
 ## APK file
 
-You can download the APK file for this project [here]()
+You can download the APK file for this project [here](https://github.com/OmolaraIdowu/Countries-Of-The-World/blob/master/app/release/Countries-Of-The-World.apk)
 
 ## Libraries
 
