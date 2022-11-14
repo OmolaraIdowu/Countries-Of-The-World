@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/countriesFragment"
-        android:name="com.swancodes.countriesoftheworld.fragments.CountriesFragment"
+        android:name="com.swancodes.countriesoftheworld.ui.home.CountriesFragment"
         android:label="fragment_countries"
         tools:layout="@layout/fragment_countries" >
         <action
@@ -16,11 +16,11 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.swancodes.countriesoftheworld.fragments.DetailsFragment"
+        android:name="com.swancodes.countriesoftheworld.ui.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details">
         <argument
-            android:name="countries"
-            app:argType="com.swancodes.countriesoftheworld.model.CountryBaseResponseItem"/>
+            android:name="country"
+            app:argType="com.swancodes.countriesoftheworld.model.CountryBaseResponseItem" />
     </fragment>
 </navigation>

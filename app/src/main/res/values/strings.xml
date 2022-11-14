@@ -23,4 +23,20 @@
     <string name="lang12">بالعربية</string>
     <string name="lang13">বাঙ্গালী</string>
     <string name="clearbutton">clearButton</string>
+    <string name="population">Population: %d</string>
+    <string name="region">Region: %s</string>
+    <string name="sub_region">Sub Region: %s</string>
+    <string name="area">Area: %f</string>
+    <string name="independence">Independence: %b</string>
+    <string name="continent">Continent: %s</string>
+    <string name="start_of_the_week">Start Of The Week: %s</string>
+    <string name="driving_side">Driving side: %s</string>
+    <string name="time_zone">Time zone: %s</string>
+    <string name="un_member">UnMember: %b</string>
+    <string name="status">Status: %s</string>
+    <string name="land_locked">Land locked: %b</string>
+    <string name="fifa">Fifa: %s</string>
+    <string name="borders">Borders: %s</string>
+    <string name="message">Request Failed</string>
+
 </resources>

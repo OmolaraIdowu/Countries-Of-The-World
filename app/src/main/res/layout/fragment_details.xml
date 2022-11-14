@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.DetailsFragment">
+    android:layout_height="wrap_content"
+    tools:context=".ui.DetailsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -25,40 +25,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.74" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/dotOne"
-            android:layout_width="6dp"
-            android:layout_height="6dp"
-            android:layout_marginStart="180dp"
-            android:layout_marginBottom="44dp"
-            android:background="@drawable/circle"
-            app:layout_constraintBottom_toBottomOf="@id/guideline2"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/guideline2" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/dotTwo"
-            android:layout_width="6dp"
-            android:layout_height="6dp"
-            android:layout_marginStart="6dp"
-            android:background="@drawable/circle"
-            app:layout_constraintBottom_toBottomOf="@id/dotOne"
-            app:layout_constraintEnd_toStartOf="@id/dotThree"
-            app:layout_constraintStart_toEndOf="@id/dotOne"
-            app:layout_constraintTop_toTopOf="@id/dotOne" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/dotThree"
-            android:layout_width="6dp"
-            android:layout_height="6dp"
-            android:layout_marginStart="6dp"
-            android:background="@drawable/circle"
-            app:layout_constraintBottom_toBottomOf="@id/dotTwo"
-            app:layout_constraintStart_toEndOf="@id/dotTwo"
-            app:layout_constraintTop_toTopOf="@id/dotTwo" />
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintGuide_percent="0.28"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineStart"
@@ -74,6 +43,41 @@
             android:orientation="vertical"
             app:layout_constraintGuide_end="24dp" />
 
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/pager"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart" />
+
+        <ImageButton
+            android:id="@+id/rightButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/arrow_background"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="@id/pager"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageButton
+            android:id="@+id/leftButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/arrow_background"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintBottom_toBottomOf="@id/pager"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
         <View
             android:id="@+id/view"
             android:layout_width="0dp"
@@ -86,17 +90,229 @@
             app:layout_constraintTop_toBottomOf="@id/pager" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/bodyText"
+            android:id="@+id/bodyTextOne"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="24dp"
-            android:fontFamily="@font/axiforma_bold"
-            android:textSize="16sp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
             app:layout_constraintStart_toStartOf="@id/guidelineStart"
             app:layout_constraintTop_toBottomOf="@id/view"
-            tools:text="Population: "/>
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextOne"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextTwo"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextFour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextThree"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextFive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextFour"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextSix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextFive"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextSeven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextSix"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextEight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextSeven"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextNine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextEight"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextTen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextNine"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextEleven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextTen"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextTwelve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextEleven"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextThirteen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextTwelve"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextFourteen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextThirteen"
+            tools:text="Title: " />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTextFifteen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/axiforma_regular"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/bodyTextFourteen"
+            tools:text="Title:" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

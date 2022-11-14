@@ -1,9 +1,10 @@
-package com.swancodes.countriesoftheworld.fragments
+package com.swancodes.countriesoftheworld.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.swancodes.countriesoftheworld.R
 import com.swancodes.countriesoftheworld.databinding.FragmentFilterBottomSheetBinding
@@ -16,14 +17,23 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentFilterBottomSheetBinding.inflate(inflater, container, false)
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.closeButton.setOnClickListener{
+            dialog?.dismiss()
+        }
+    }
+
     companion object {
         const val TAG = "Filter"
     }
+
 }
 

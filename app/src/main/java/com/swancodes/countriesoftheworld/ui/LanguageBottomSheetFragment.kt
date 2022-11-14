@@ -1,4 +1,4 @@
-package com.swancodes.countriesoftheworld.fragments
+package com.swancodes.countriesoftheworld.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

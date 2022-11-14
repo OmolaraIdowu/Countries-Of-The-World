@@ -3,18 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable-v24/loading_img.xml" value="0.1865" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/arrow_background.xml" value="0.1865" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/background_text_field.xml" value="0.176" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.1865" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/circle.xml" value="0.1865" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/dark_indicator_background.xml" value="0.1865" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/ic_arrow_left.xml" value="0.1865" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/ic_arrow_right.xml" value="0.1865" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/ic_close.xml" value="0.1865" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/ic_connection_error.xml" value="0.1865" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/ic_error.xml" value="0.1865" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/ic_filter.xml" value="0.176" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/ic_geography.xml" value="0.176" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/ic_light.xml" value="0.176" />
-        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/activity_main.xml" value="0.14266304347826086" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/drawable/indicator_background.xml" value="0.1865" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/alphabet_list_item.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/country_list_items.xml" value="0.24166666666666667" />
-        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/fragment_countries.xml" value="0.18" />
-        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/fragment_details.xml" value="0.24166666666666667" />
-        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/fragment_filter_bottom_sheet.xml" value="0.24166666666666667" />
-        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/fragment_language_bottom_sheet.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/filter_child_layout.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/filter_header_layout.xml" value="0.9" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/fragment_countries.xml" value="0.33" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/fragment_details.xml" value="0.25" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/fragment_filter_bottom_sheet.xml" value="0.38936959208899874" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/fragment_language_bottom_sheet.xml" value="0.33" />
+        <entry key="..\:/Users/Swan/MyAndroidWorkSpace/CountriesOfTheWorld/app/src/main/res/layout/image_slider.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/drawable/background.xml" value="0.2445" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/drawable/background_text_field.xml" value="0.2445" />
         <entry key="..\:/Users/Swan/MyAndroidWorkSpace/WorldMap/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.2445" />
